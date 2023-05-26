@@ -4,6 +4,13 @@ canvas {
   left: 0;
 }
 
+#loadCanvas {
+  height:100vl;
+  width:100vw;
+  background-color:black;
+  color:white;
+}
+
 main {
   position: absolute;
 }
