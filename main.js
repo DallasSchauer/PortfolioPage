@@ -26,7 +26,7 @@ loadingManager.onLoad = function() {
 
 const loader = new GLTFLoader(loadingManager);
 loader.load(
-  '/models/scene.gltf',
+  '/models/computer/scene.gltf',
   function (gltf) {
     scene.add(gltf.scene);
     
@@ -82,8 +82,8 @@ scene.background = skyTexture;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  camera.position.z = t * -.05;
-  camera.position.x = t * -.0002;
+  camera.position.z = t * -.5;
+  camera.position.x = t * -.2;
   camera.position.y = t * -.0002;
 }
 
