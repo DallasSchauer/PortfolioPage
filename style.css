@@ -14,3 +14,53 @@ canvas {
 main {
   position: absolute;
 }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-weight: lighter;
+  text-shadow: 3px 3px black;
+}
+
+/* .paragraph-box {
+  grid-column: 2 / span 5;
+  width: 50vw;
+  height: 75vw;
+  padding: 10px;
+  background-color: darkslategrey;
+  border: 5px solid gray;
+  opacity: 60%;
+  margin: 10px;
+  margin-top: 1000px;
+  margin-bottom: 1000px;
+  margin-left: 5vw;
+  border-radius: 25px;
+  border: 2px solid navy;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: darkslategrey;
+}
+
+.flex-container > div {
+  background-color: darkslategrey;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container > div > img {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+br {
+  display: block;
+  margin: 100px 0;
+} */

@@ -82,9 +82,14 @@ scene.background = skyTexture;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  camera.position.z = t * -.5;
-  camera.position.x = t * -.2;
+  camera.position.z = t * -.01;
+  camera.position.x = t * -.0002;
   camera.position.y = t * -.0002;
+
+
+  console.log(camera.position.x);
+  console.log(camera.position.y);
+  console.log(camera.position.z);
 }
 
 document.body.onscroll = moveCamera;
