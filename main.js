@@ -82,14 +82,13 @@ scene.background = skyTexture;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  camera.position.z = t * -.01;
-  camera.position.x = t * -.0002;
-  camera.position.y = t * -.0002;
+  camera.position.z = t * -.25;
+  // camera.position.x = t * -.002 - 20;
+  camera.position.y = t * -.002 + 28;
 
-
-  console.log(camera.position.x);
-  console.log(camera.position.y);
-  console.log(camera.position.z);
+  console.log("X : " + camera.position.x);
+  console.log("Y : " + camera.position.y);
+  console.log("Z : " + camera.position.z);
 }
 
 document.body.onscroll = moveCamera;
@@ -101,5 +100,9 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+
+console.log("X : " + camera.position.x);
+console.log("Y : " + camera.position.y);
+console.log("Z : " + camera.position.z);
 
 animate()

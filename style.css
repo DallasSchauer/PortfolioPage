@@ -45,14 +45,15 @@ body {
   text-shadow: 3px 3px black;
 }
 
-/* section {
+section {
   grid-column: 2 / 8;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: var(--spacing);
-} */
+  margin-top: 10000px;
+  margin-bottom: 10000px;
+}
 
 /* .paragraph-box {
   grid-column: 2 / span 5;
@@ -92,7 +93,9 @@ body {
   margin: 10px;
 }
 
+*/
+
 br {
   display: block;
-  margin: 100px 0;
-}  */
+  margin: 10000px;
+}  
