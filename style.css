@@ -12,7 +12,29 @@ canvas {
 }
 
 main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
   position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 2 / span 5;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
 }
 
 body {
@@ -22,6 +44,15 @@ body {
   font-weight: lighter;
   text-shadow: 3px 3px black;
 }
+
+/* section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+} */
 
 /* .paragraph-box {
   grid-column: 2 / span 5;
@@ -38,8 +69,9 @@ body {
   border-radius: 25px;
   border: 2px solid navy;
 }
+*/
 
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-wrap: nowrap;
   background-color: darkslategrey;
@@ -63,4 +95,4 @@ body {
 br {
   display: block;
   margin: 100px 0;
-} */
+}  */
