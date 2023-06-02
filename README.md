@@ -8,7 +8,7 @@
 - add interactive menu on bottom
 - add "scroll back" text
 - add intro part
-- add project navigating buttons
+- add project navigating buttons4517
 
 # SECTIONS
 - about me (picture of me/mountain??)
