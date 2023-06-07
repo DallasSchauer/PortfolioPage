@@ -65,30 +65,41 @@ controls.enableRotate = false;
 controls.enablePan = false;
 controls.minDistance = 100;
 
-function addStar() {
+function addStar(a, b, c) {
   const geometry = new THREE.SphereGeometry(.25, 24, 24);
   const material = new THREE.MeshStandardMaterial({color:0xffffff});
   const star = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(1000));
+  const [x, y, z] = [a, b, c];
   star.position.set(x,y,z);
   scene.add(star);
 }
 
-Array(1000).fill().forEach(addStar);
+addStar(-19, 28, 865);
+addStar(-19, 28, 1565);
+addStar(-19, 28, 2240);
+addStar(-19, 28, 2815);
+
+// Array(1000).fill().forEach(addStar);
 
 const skyTexture = new THREE.TextureLoader().load('greenblacksky.avif');
 scene.background = skyTexture;
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
+
   camera.position.z = t * -.25;
   // camera.position.x = t * -.002 - 20;
-  camera.position.y = t * -.002 + 28;
+  // camera.position.y = t * -.002 + 28;
 
   console.log("X : " + camera.position.x);
   console.log("Y : " + camera.position.y);
   console.log("Z : " + camera.position.z);
+
+  if (t != 0) {
+    const instruction = document.getElementById("instructions");
+    instruction.style.visibility = "hidden";
+  }
 }
 
 document.body.onscroll = moveCamera;
