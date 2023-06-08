@@ -75,10 +75,10 @@ function addStar(a, b, c) {
   scene.add(star);
 }
 
-addStar(-19, 28, 865);
-addStar(-19, 28, 1565);
-addStar(-19, 28, 2240);
-addStar(-19, 28, 2815);
+addStar(-17, 28, 770);
+addStar(-17, 28, 1445);
+addStar(-17, 28, 2110);
+addStar(-17, 28, 2675);
 
 // Array(1000).fill().forEach(addStar);
 
