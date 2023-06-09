@@ -55,7 +55,7 @@ section {
   background-color: darkslategrey;
   font-size: 1.25rem;
   line-height: 1.5;
-  opacity: 60%;
+  opacity: 80%;
   margin-top: 1000px;
   margin-bottom: 1000px;
   border-radius: 25px;
@@ -69,24 +69,29 @@ section {
   background-color: darkslategrey;
 } 
 
-
-
 .flex-container > div {
   background-color: darkslategrey;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid white;
 }
 
 .flex-container > div > img {
-  width: 75px;
-  height: 75px;
-  margin: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  filter: grayscale(50%);
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
-
+.flex-container > div > img:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%);
+}
 
 br {
   display: block;
@@ -105,6 +110,10 @@ h6 {
   margin-bottom: 25vh;
 }
 
+h2 {
+  vertical-align: center;
+}
+
 h3 {
   font-family: Garamond, serif;
   margin-top: 50vh;
@@ -114,4 +123,9 @@ h3 {
   text-align: center;
   text-shadow: 5px 5px darkslategrey;
   color: white;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
 }

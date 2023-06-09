@@ -29,7 +29,6 @@ loader.load(
   '/models/computer/scene.gltf',
   function (gltf) {
     scene.add(gltf.scene);
-    
   },
   function ( xhr ) {
 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
@@ -39,6 +38,27 @@ loader.load(
 		console.log( 'An error happened' );
 	}
 );
+
+// loader.load(
+//   '/models/keyboard/scene.gltf',
+//   function (gltf) {
+//     scene.add(gltf.scene);
+
+//     gltf.scene.position.x = -17;
+//     gltf.scene.position.y = 28;
+//     gltf.scene.position.z = 1445;
+//     gltf.scene.rotation = 0.5;
+//   },
+//   function ( xhr ) {
+// 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+// 	},
+// 	function ( error ) {
+// 		console.log( 'An error happened' );
+// 	}
+// );
+
+
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -67,30 +87,66 @@ controls.minDistance = 100;
 
 function addStar(a, b, c) {
   const geometry = new THREE.SphereGeometry(.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({color:0xffffff});
+  const material = new THREE.MeshBasicMaterial({color:0xffffff});
   const star = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = [a, b, c];
+  const x = Math.random() * (100 + 100) - 100;
+  const y = Math.random() * (100 + 100) - 100;
+  const z = Math.random() * (3000 - 100) + 100;
+
   star.position.set(x,y,z);
   scene.add(star);
 }
 
-addStar(-17, 28, 770);
-addStar(-17, 28, 1445);
-addStar(-17, 28, 2110);
-addStar(-17, 28, 2675);
+Array(1000).fill().forEach(addStar);
 
-// Array(1000).fill().forEach(addStar);
-
-const skyTexture = new THREE.TextureLoader().load('greenblacksky.avif');
+const skyTexture = new THREE.TextureLoader().load('images/greenblacksky.avif');
 scene.background = skyTexture;
+
+const pfpTexture = new THREE.TextureLoader().load('images/pfp.PNG');
+
+const pfp = new THREE.Mesh(
+  new THREE.BoxGeometry(3, 3, 3),
+  new THREE.MeshBasicMaterial({map : pfpTexture})
+);
+
+scene.add(pfp);
+
+pfp.position.x = -16;
+pfp.position.y = 28;
+pfp.position.z = 792;
+
+const kbTexture = new THREE.TextureLoader().load('images/keyboard.PNG');
+
+const kb = new THREE.Mesh(
+  new THREE.BoxGeometry(10, 3, 0.1),
+  new THREE.MeshBasicMaterial({map : kbTexture})
+);
+
+scene.add(kb);
+
+kb.position.x = -15;
+kb.position.y = 28;
+kb.position.z = 1490;
+
+const ghTexture = new THREE.TextureLoader().load('images/github.PNG');
+
+const gh = new THREE.Mesh(
+  new THREE.BoxGeometry(5, 5, 5),
+  new THREE.MeshBasicMaterial({map : ghTexture})
+);
+
+scene.add(gh);
+
+gh.position.x = -12;
+gh.position.y = 28;
+gh.position.z = 2185;
+
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
 
   camera.position.z = t * -.25;
-  // camera.position.x = t * -.002 - 20;
-  // camera.position.y = t * -.002 + 28;
 
   console.log("X : " + camera.position.x);
   console.log("Y : " + camera.position.y);
@@ -109,8 +165,16 @@ function animate() {
 
   controls.update();
 
+  pfp.rotation.x += 0.0075;
+  pfp.rotation.y += 0.0075;
+
+  kb.rotation.z += 0.005;
+
+  gh.rotation.z += 0.005;
+
   renderer.render(scene, camera);
 }
+
 
 console.log("X : " + camera.position.x);
 console.log("Y : " + camera.position.y);
