@@ -39,24 +39,24 @@ loader.load(
 	}
 );
 
-// loader.load(
-//   '/models/keyboard/scene.gltf',
-//   function (gltf) {
-//     scene.add(gltf.scene);
+loader.load(
+  '/models/mountain/scene.gltf',
+  function (gltf) {
+    scene.add(gltf.scene);
 
-//     gltf.scene.position.x = -17;
-//     gltf.scene.position.y = 28;
-//     gltf.scene.position.z = 1445;
-//     gltf.scene.rotation = 0.5;
-//   },
-//   function ( xhr ) {
-// 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+    gltf.scene.position.x = 15;
+    gltf.scene.position.y = 10;
+    gltf.scene.position.z = 2730;
+    gltf.scene.rotation.y = 0.5;
+  },
+  function ( xhr ) {
+		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
 
-// 	},
-// 	function ( error ) {
-// 		console.log( 'An error happened' );
-// 	}
-// );
+	},
+	function ( error ) {
+		console.log( 'An error happened' );
+	}
+);
 
 
 
