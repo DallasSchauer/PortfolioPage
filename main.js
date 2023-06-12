@@ -3,8 +3,6 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
 
-
-
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -67,16 +65,8 @@ camera.position.set(-20, 28, 0);
 
 renderer.render(scene, camera);
 
-// const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-// const material = new THREE.MeshStandardMaterial( {color: 0xFF6347});
-// const torus = new THREE.Mesh(geometry, material);
-// scene.add(torus)
-
 const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
-
-// const gridHelper = new THREE.GridHelper(2000, 50);
-// scene.add(gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -142,15 +132,17 @@ gh.position.x = -12;
 gh.position.y = 28;
 gh.position.z = 2185;
 
+function makeIntroVisible() {
+  const instruction = document.getElementById("instructions");
+  instruction.style.visibility = "visible";
+}
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
 
   camera.position.z = t * -.25;
 
-  console.log("X : " + camera.position.x);
-  console.log("Y : " + camera.position.y);
-  console.log("Z : " + camera.position.z);
+  console.log("X : " + camera.position.x + ", Y : " + camera.position.y + ", Z : " + camera.position.z);
 
   if (t != 0) {
     const instruction = document.getElementById("instructions");
@@ -175,9 +167,5 @@ function animate() {
   renderer.render(scene, camera);
 }
 
-
-console.log("X : " + camera.position.x);
-console.log("Y : " + camera.position.y);
-console.log("Z : " + camera.position.z);
-
 animate()
+setTimeout(makeIntroVisible, 3000);
