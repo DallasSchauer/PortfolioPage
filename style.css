@@ -132,13 +132,18 @@ h3 {
 .logo {
   height: 100px;
   width: 100px;
+  border: 5px solid white;
 }
 
 .blinking{
   animation:blinkingText 2s linear infinite;
 }
 @keyframes blinkingText{
-  0%{color: lightgreen;}
+  50% {
+    opacity: 0;
+  }
+
+  /* 0%{color: lightgreen;}
   10%{color: rgb(83, 167, 83);}
   20%{color: rgb(44, 129, 44);}
   30%{color: rgb(23, 104, 23);}
@@ -148,5 +153,5 @@ h3 {
   70%{color: rgb(23, 104, 23);}
   80%{color: rgb(44, 129, 44);}
   90%{color: rgb(83, 167, 83);}
-  100%{color: lightgreen;}
+  100%{color: lightgreen;} */
 }
