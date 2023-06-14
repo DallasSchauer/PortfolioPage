@@ -14,10 +14,10 @@
 
     <main>
       <div class="grid-div">
-        <h6 style="color: green;" class="blinking" id="instructions">scroll backwards</h6>
+        <h6 style="color: green;" class="blinking" id="instructions">Scroll Down</h6>
       </div>
       <div class="grid-div">
-        <h3>Dallas Schauer's</h3>
+        <h3>Welcome to My</h3>
         <h3>Portfolio Website</h3>
       </div>
 
@@ -30,7 +30,7 @@
           baseball, hockey, basketball, and football, and have a lifetime goal of visiting every
           U.S. National Park. I love animals and have two gray cats at home.<br>
           I have had an interest in programming since high school, where I learned Java programming.
-          Since going to school for Computer Science, I have done work with the Java Springboot
+          Since going to school for Computer Science, I have spent time working with Java Springboot
           framework, Python Flask framework, and HTML/CSS/JS web design.
         </p>
 
@@ -75,15 +75,16 @@
 
         <section class="paragraph-box">
           <div class="flex-container">
-            <div><img src="images/clinchedLogo.PNG"></div>
-            <div><img src="images/ridesimLogo.PNG"></div>
-            <div><img src="images/wordleLogo.PNG"></div>
-            <div><img src="images/portfolioLogo.PNG"></div>
+            <div><img src="images/clinchedLogo.PNG" onClick="changeProjectDescription(1)"></div>
+            <div><img src="images/ridesimLogo.PNG" onClick="changeProjectDescription(2)"></div>
+            <div><img src="images/wordleLogo.PNG" onClick="changeProjectDescription(3)"></div>
+            <div><img src="images/portfolioLogo.PNG" onClick="changeProjectDescription(4)"></div>
           </div> 
-          <h1 class="project-name">Projects</h1>
-          <p class="project-description">This section shows personal projects as well as significant school projects. Please click
-            on the icons above to view.
-          </p>
+          <h1 id="project-name">Projects</h1>
+          <p id="project-description">This section shows personal projects as well as significant school projects. Please click
+            on the icons above to view.</p>
+          <p id="video-link"></p>
+          <p id="gh-link"></p>
           </section>
 
           <section class="paragraph-box">
