@@ -137,6 +137,31 @@ function makeIntroVisible() {
   instruction.style.visibility = "visible";
 }
 
+function changeProjectDescription(i) {
+  switch (i) {
+    case 0:
+      // Project home page
+      
+    case 1:
+      // Sports Organizer 
+
+      break;
+    case 2:
+      // Ride Sim
+
+      break;
+    case 3:
+      // Wordle Sim
+      
+      break;
+    case 4:
+      // Website
+
+    default:
+      console.log("Switch statement error.");
+  }
+}
+
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
 
