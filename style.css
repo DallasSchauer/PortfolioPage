@@ -62,6 +62,9 @@ section {
   border: 2px solid navy;
 }
 
+#project-section {
+  height: 750px;
+}
 
 .flex-container {
   display: flex;

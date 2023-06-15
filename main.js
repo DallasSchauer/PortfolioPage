@@ -137,26 +137,40 @@ function makeIntroVisible() {
   instruction.style.visibility = "visible";
 }
 
+document.getElementById("project1").addEventListener("click", function() {changeProjectDescription(1);});
+document.getElementById("project2").addEventListener("click", function() {changeProjectDescription(2);});
+document.getElementById("project3").addEventListener("click", function() {changeProjectDescription(3);});
+document.getElementById("project4").addEventListener("click", function() {changeProjectDescription(4);});
+
 function changeProjectDescription(i) {
   switch (i) {
-    case 0:
-      // Project home page
-      
     case 1:
       // Sports Organizer 
-
+      document.getElementById("project-name").innerText = "Springboot Sports Organizer Webapp";
+      document.getElementById("project-description").innerText = "This project acts as a full-stack web site acting as a sports organization tool, meaning a web site that emulates the real life applications used by many recreational centers to organize local sporting events. This app lets users create accounts, organize and join different sporting events divided into leagues and tournaments, and create and join teams. The program takes care of scheduling, maintaining rules, and providing a convenient user interface."
+      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/Spring-Sports-Organizer";
       break;
     case 2:
       // Ride Sim
-
+      document.getElementById("project-name").innerText = "Ride Simulation App";
+      document.getElementById("project-description").innerText = "App that simulates hypothetical ride simulation service using drones to pick up people.";
+      document.getElementById("video-link").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/YyKTyInRQIw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>";
+      document.getElementById("gh-link").innerText = "";
       break;
     case 3:
       // Wordle Sim
-      
+      document.getElementById("project-name").innerText = "Wordle Solver Web App";
+      document.getElementById("project-description").innerText = "Webapp that uses my Wordle solving AI to test different strategies.";
+      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/WordleSolverWebApp";
       break;
     case 4:
       // Website
-
+      document.getElementById("project-name").innerText = "This Website";
+      document.getElementById("project-description").innerText = "Portfolio website using Threejs";
+      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/PortfolioPage";
     default:
       console.log("Switch statement error.");
   }
