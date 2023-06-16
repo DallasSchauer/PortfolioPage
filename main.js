@@ -144,12 +144,19 @@ document.getElementById("project4").addEventListener("click", function() {change
 
 function changeProjectDescription(i) {
   switch (i) {
+    case 0:
+      // Default
+      document.getElementById("project-name").innerText = "Projects";
+      document.getElementById("project-description").innerText = "This section shows personal projects as well as significant school projects. Please click on the icons above to view.";
+      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("gh-link").innerHTML = "";
+      break;
     case 1:
       // Sports Organizer 
       document.getElementById("project-name").innerText = "Springboot Sports Organizer Webapp";
       document.getElementById("project-description").innerText = "This project acts as a full-stack web site acting as a sports organization tool, meaning a web site that emulates the real life applications used by many recreational centers to organize local sporting events. This app lets users create accounts, organize and join different sporting events divided into leagues and tournaments, and create and join teams. The program takes care of scheduling, maintaining rules, and providing a convenient user interface."
       document.getElementById("video-link").innerHTML = "";
-      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/Spring-Sports-Organizer";
+      document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/Spring-Sports-Organizer'>Github Page</a>";
       break;
     case 2:
       // Ride Sim
@@ -163,14 +170,14 @@ function changeProjectDescription(i) {
       document.getElementById("project-name").innerText = "Wordle Solver Web App";
       document.getElementById("project-description").innerText = "Webapp that uses my Wordle solving AI to test different strategies.";
       document.getElementById("video-link").innerHTML = "";
-      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/WordleSolverWebApp";
+      document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/WordleSolverWebApp'>Github Page</a>";
       break;
     case 4:
       // Website
       document.getElementById("project-name").innerText = "This Website";
       document.getElementById("project-description").innerText = "Portfolio website using Threejs";
       document.getElementById("video-link").innerHTML = "";
-      document.getElementById("gh-link").innerText = "https://github.com/DallasSchauer/PortfolioPage";
+      document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/PortfolioPage'>Github Page</a>";
     default:
       console.log("Switch statement error.");
   }

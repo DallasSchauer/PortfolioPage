@@ -42,7 +42,7 @@ body {
   color: white;
   font-family: Tahoma, sans-serif;
   font-weight: lighter;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2px black;
 }
 
 .grid-div {
@@ -56,14 +56,11 @@ section {
   font-size: 1.25rem;
   line-height: 1.5;
   opacity: 80%;
+  height: 750px;
   margin-top: 1000px;
   margin-bottom: 1000px;
   border-radius: 25px;
   border: 2px solid navy;
-}
-
-#project-section {
-  height: 750px;
 }
 
 .flex-container {
@@ -79,7 +76,7 @@ section {
   margin: 10px;
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid white;
+  border: 1px solid white;
 }
 
 .flex-container > div > img {
@@ -115,6 +112,19 @@ h6 {
 
 h2 {
   vertical-align: center;
+}
+
+a {
+  color: blue;
+  text-shadow: none;
+}
+
+a:hover {
+  color:lightgreen;
+}
+
+li {
+  margin: 30px;
 }
 
 h3 {
