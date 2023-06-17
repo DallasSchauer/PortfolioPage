@@ -63,6 +63,10 @@ section {
   border: 2px solid navy;
 }
 
+#work-experience {
+  font-size: 14px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -121,6 +125,21 @@ a {
 
 a:hover {
   color:lightgreen;
+}
+
+#project-tags {
+  list-style-type: none;
+}
+
+#project-tags > li {
+  border-radius: 5px;
+  color: white;
+  margin: 5px;
+  padding: 6px;
+  font-size: 18px;
+  background-color: blue;
+  text-shadow: 2px 1px 10px black;
+  float: left;
 }
 
 li {

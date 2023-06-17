@@ -137,6 +137,7 @@ function makeIntroVisible() {
   instruction.style.visibility = "visible";
 }
 
+document.getElementById("project0").addEventListener("click", function() {changeProjectDescription(0);});
 document.getElementById("project1").addEventListener("click", function() {changeProjectDescription(1);});
 document.getElementById("project2").addEventListener("click", function() {changeProjectDescription(2);});
 document.getElementById("project3").addEventListener("click", function() {changeProjectDescription(3);});
@@ -148,12 +149,14 @@ function changeProjectDescription(i) {
       // Default
       document.getElementById("project-name").innerText = "Projects";
       document.getElementById("project-description").innerText = "This section shows personal projects as well as significant school projects. Please click on the icons above to view.";
+      document.getElementById("project-tags").innerHTML = ("");
       document.getElementById("video-link").innerHTML = "";
       document.getElementById("gh-link").innerHTML = "";
       break;
     case 1:
       // Sports Organizer 
       document.getElementById("project-name").innerText = "Springboot Sports Organizer Webapp";
+      document.getElementById("project-tags").innerHTML = ("<li style='background-color: green;'>Java Springboot</li><li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li><li style='background-color: darkblue;'>MySQL</li><li style='background-color:lightblue;'>Postgres</li>");
       document.getElementById("project-description").innerText = "This project acts as a full-stack web site acting as a sports organization tool, meaning a web site that emulates the real life applications used by many recreational centers to organize local sporting events. This app lets users create accounts, organize and join different sporting events divided into leagues and tournaments, and create and join teams. The program takes care of scheduling, maintaining rules, and providing a convenient user interface."
       document.getElementById("video-link").innerHTML = "";
       document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/Spring-Sports-Organizer'>Github Page</a>";
@@ -161,6 +164,7 @@ function changeProjectDescription(i) {
     case 2:
       // Ride Sim
       document.getElementById("project-name").innerText = "Ride Simulation App";
+      document.getElementById("project-tags").innerHTML = ("<li style='background-color: darkgreen;'>C++</li><li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li>");
       document.getElementById("project-description").innerText = "App that simulates hypothetical ride simulation service using drones to pick up people.";
       document.getElementById("video-link").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/YyKTyInRQIw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>";
       document.getElementById("gh-link").innerText = "";
@@ -168,6 +172,7 @@ function changeProjectDescription(i) {
     case 3:
       // Wordle Sim
       document.getElementById("project-name").innerText = "Wordle Solver Web App";
+      document.getElementById("project-tags").innerHTML = ("<li style='background-color: goldenrod;'>Python</li><li style='background-color:black;'>Flask</li><li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li>");
       document.getElementById("project-description").innerText = "Webapp that uses my Wordle solving AI to test different strategies.";
       document.getElementById("video-link").innerHTML = "";
       document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/WordleSolverWebApp'>Github Page</a>";
@@ -175,6 +180,7 @@ function changeProjectDescription(i) {
     case 4:
       // Website
       document.getElementById("project-name").innerText = "This Website";
+      document.getElementById("project-tags").innerHTML = ("<li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li><li style='background-color:purple;'>ThreeJS</li>");
       document.getElementById("project-description").innerText = "Portfolio website using Threejs";
       document.getElementById("video-link").innerHTML = "";
       document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/PortfolioPage'>Github Page</a>";

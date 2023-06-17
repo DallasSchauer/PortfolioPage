@@ -3,10 +3,7 @@
 # HTML, CSS, JS, three.js
 
 # TO DO
-- fill out section paragraphs
-- add interactive menu on bottom
-- style intro part
-- add project navigating buttons
+- make vids for projects. write scripts in readMe
 
 # SECTIONS
 - about me (picture of me/mountain??)
