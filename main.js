@@ -44,7 +44,7 @@ loader.load(
 
     gltf.scene.position.x = 15;
     gltf.scene.position.y = 10;
-    gltf.scene.position.z = 2730;
+    gltf.scene.position.z = 2810;
     gltf.scene.rotation.y = 0.5;
   },
   function ( xhr ) {
@@ -102,9 +102,9 @@ const pfp = new THREE.Mesh(
 
 scene.add(pfp);
 
-pfp.position.x = -16;
+pfp.position.x = -17;
 pfp.position.y = 28;
-pfp.position.z = 792;
+pfp.position.z = 768;
 
 const kbTexture = new THREE.TextureLoader().load('images/keyboard.PNG');
 
@@ -117,7 +117,7 @@ scene.add(kb);
 
 kb.position.x = -15;
 kb.position.y = 28;
-kb.position.z = 1490;
+kb.position.z = 1466;
 
 const ghTexture = new THREE.TextureLoader().load('images/github.PNG');
 
@@ -130,7 +130,7 @@ scene.add(gh);
 
 gh.position.x = -12;
 gh.position.y = 28;
-gh.position.z = 2185;
+gh.position.z = 2160;
 
 function makeIntroVisible() {
   const instruction = document.getElementById("instructions");
@@ -210,7 +210,7 @@ function animate() {
   controls.update();
 
   pfp.rotation.x += 0.0075;
-  pfp.rotation.y += 0.0075;
+  // pfp.rotation.y += 0.0075;
 
   kb.rotation.z += 0.005;
 

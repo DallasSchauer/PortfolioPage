@@ -144,6 +144,7 @@ a:hover {
 
 li {
   margin: 30px;
+  list-style-type: none;
 }
 
 h3 {
