@@ -11,3 +11,13 @@
 - projects (computer)
 
 # npm rundev
+
+# VIDEO SCRIPTS
+
+## SPORTS ORGANIZER
+
+## RIDE SIM
+
+## WORDLE SIM
+
+## PORTFOLIO WEBSITE
