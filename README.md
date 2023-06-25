@@ -17,7 +17,10 @@
 ## SPORTS ORGANIZER
 
 ## RIDE SIM
-
+- Show old video, commentate on HTML/CSS/JS frontend, C++ backend, describe whats happening, then talk about factory, strategy, and singleton patterns
+   
 ## WORDLE SIM
-
+- Show game of wordle, show game of quordle. Describe application. Single game -> Multiple game
+  
 ## PORTFOLIO WEBSITE
+- Just show video w/ music
