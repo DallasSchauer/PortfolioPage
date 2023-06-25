@@ -157,8 +157,8 @@ function changeProjectDescription(i) {
       // Sports Organizer 
       document.getElementById("project-name").innerText = "Springboot Sports Organizer Webapp";
       document.getElementById("project-tags").innerHTML = ("<li style='background-color: green;'>Java Springboot</li><li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li><li style='background-color: darkblue;'>MySQL</li><li style='background-color:lightblue;'>Postgres</li>");
-      document.getElementById("project-description").innerText = "This project acts as a full-stack web site acting as a sports organization tool, meaning a web site that emulates the real life applications used by many recreational centers to organize local sporting events. This app lets users create accounts, organize and join different sporting events divided into leagues and tournaments, and create and join teams. The program takes care of scheduling, maintaining rules, and providing a convenient user interface."
-      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("project-description").innerText = "This project acts as a full-stack web site acting as a sports organization tool, meaning a web site that emulates the real life applications used by many recreational centers to organize local sporting events. This app lets users create accounts, organize and join different sporting leagues and tournaments, and create and join teams. The program takes care of scheduling, maintaining rules, and providing a convenient user interface."
+      document.getElementById("video-link").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/OEQqFFHiWeQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>";
       document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/Spring-Sports-Organizer'>Github Page</a>";
       break;
     case 2:
@@ -174,7 +174,7 @@ function changeProjectDescription(i) {
       document.getElementById("project-name").innerText = "Wordle Solver Web App";
       document.getElementById("project-tags").innerHTML = ("<li style='background-color: goldenrod;'>Python</li><li style='background-color:black;'>Flask</li><li style='background-color: red;'>HTML</li><li style='background-color: blue;'>CSS</li><li style='background-color: orange;'>JavaScript</li>");
       document.getElementById("project-description").innerText = "Webapp that uses my Wordle solving AI to test different strategies.";
-      document.getElementById("video-link").innerHTML = "";
+      document.getElementById("video-link").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/1w7Mzy29kYw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>;"
       document.getElementById("gh-link").innerHTML = "<a href='https://github.com/DallasSchauer/WordleSolverWebApp'>Github Page</a>";
       break;
     case 4:
