@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-c9631adc.js"></script>
+    <link rel="stylesheet" href="/assets/index-981c17e5.css">
+  </head>
+
+  <body>
+    <canvas id="loadCanvas">LOADING</canvas>
+    <canvas id="bg">
+    </canvas>
+
+    <main>
+      <div class="grid-div">
+        <h6 style="color: green;" class="blinking" id="instructions">Scroll Down</h6>
+      </div>
+      <div class="grid-div">
+        <h3>Welcome to My</h3>
+        <h3>Portfolio Website</h3>
+      </div>
+
+      <section class="paragraph-box">
+        <h1>About Me</h1>
+        <p>Hello! I'm Dallas Schauer, a Junior Software Engineer in the Twin Cities metro area.</p>
+
+        <h2>Interests</h2>
+        <p>My personal interests include sports, movies, and hiking. I am passionate about sports 
+          statistics and have a lifetime goal of visiting every
+          U.S. National Park. I love animals and have two gray cats at home.<br>
+          I have had an interest in programming since high school, where I learned Java programming.
+          Since going to school for Computer Science, I have spent time working with Java Springboot
+          framework, Python Flask framework, and HTML/CSS/JS web design.
+        </p>
+
+        <h2> Education</h2>
+        <h4> University of Minnesota : Bachelors Degree - Computer Science </h4>
+        <p> 3.64 GPA - Cum Laude </p>
+        <h2 style="color:lightgreen;">dallas.j.schauer@gmail.com</h2>
+        </section>
+
+      <section class="paragraph-box" id="work-experience">
+        <h1>Work Experience</h1>
+        <ul>
+          <li>
+            <img src="/assets/TCSlogo-eabd20fb.png" class="logo" style="float: left; margin-right: 10px;">
+              <h2>Tata Consultancy Services - Software Engineer </h2>
+              <p> August 2022 - Present </p>
+              <p>  Completed Core Java and Java SpringBoot training bootcamp. Completed full stack applications both individually and
+                through team cooperation. Additionally, trained in Agile methodology, soft skills, and security measures.</p>
+            <ul style="border-left-style: groove; border-left-color: blue;">
+              <li>
+                <img src="/assets/ameripriseLogo-d33cb1ab.png" class="logo" style="float: left; margin-right: 10px;">
+                  <h2> Ameriprise - Operations Engineer </h2>
+                  <p> November 2022 - Present </p>
+                  <p>  Information security analyst working with users regarding Identity access management issues, such as the authentication and
+                    authorization of users. Work with Java codebase, Servicenow ticketing system, and AWS cloud systems.
+                    </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img src="/assets/mcaeLogo-1487a314.jpg" class="logo" style="float: left; margin-right: 10px;">
+              <h2> University of Minnesota Multicultural Center of Education - Computer Science Tutor </h2>
+              <p> January 2022 - May 2022 </p>
+              <p>  Answered computer science questions from students relating to University curriculum. Worked 
+                with students to complete homework assignments and helped students in understanding material.</p>
+          </li>
+          <li>
+            <img src="data:image/png;base64,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" class="logo" style="float: left; margin-right: 10px;">
+              <h2> Hy-Vee - Hibachi Chef </h2>
+              <p> July 2017 - January 2022 </p>
+              <p> Cooked and prepared food following appropriate health and safety protocols to deliver a quality
+                 product to the customer. Balanced performing multiple tasks at one time such as cooking, helping
+                  customers, cleaning, and preparing food to maintain productivity.</p>
+          </li>
+        </ul>
+        </section>
+
+        <section class="paragraph-box" id="project-section">
+          <div class="flex-container">
+            <div id="project1"><img src="/assets/clinchedLogo-2eead4bd.PNG"></div>
+            <div id="project2"><img src="/assets/ridesimLogo-e0dbd701.PNG" ></div>
+            <div><img src="data:image/png;base64,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" id="project3"></div>
+            <div><img src="/assets/portfolioLogo-d60f9022.PNG" id="project4"></div>
+            <div style="float:right;"><img src="/assets/houseicon-6c72345e.png" id="project0"></div>
+          </div> 
+          <h1 id="project-name">Projects</h1>
+          <ul id="project-tags"></ul><br>
+          <br><p id="project-description" style="font-size:16px;">This section shows personal projects as well as significant school projects. Please click
+            on the icons above to view.</p>
+          <p id="video-link"></p>
+          <p id="gh-link"></p>
+          </section>
+
+          <section class="paragraph-box">
+            <h1>Thank You for Reading!</h1>
+            <p>Credits to these artists for the 3D models:</p>
+            <ul>
+                <li><p>Computer monitor:<br>
+                  * title:	Retro Computer Setup (FREE)<br>
+                  * source:	https://sketchfab.com/3d-models/retro-computer-setup-free-82eaf2047e0447a1bfea22482f1d1404<br>
+                  * author:	Brandon Westlake (https://sketchfab.com/dr.badass2142)<br>
+                </p></li>
+                <li><p>Mountain:<br>
+                  * title:	Mountain Landscape<br>
+                  * source:	https://sketchfab.com/3d-models/mountain-landscape-67135779778a42afa0fe3f92b02f5069<br>
+                  * author:	elsergio217 (https://sketchfab.com/elsergio217)<br>
+                </p></li>
+              </ul>
+            </section>
+    </main>
+
+    
+  </body>
+</html>
