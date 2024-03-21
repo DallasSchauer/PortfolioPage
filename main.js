@@ -1,4 +1,3 @@
-import './style.css'
 import * as THREE from 'three';
 import {OrbitControls} from 'OrbitControls';
 import {GLTFLoader} from 'GLTFLoader'
