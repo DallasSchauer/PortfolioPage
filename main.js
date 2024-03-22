@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'OrbitControls';
-import {GLTFLoader} from 'GLTFLoader'
+import {GLTFLoader} from 'GLTFLoader';
 
 const scene = new THREE.Scene();
 
