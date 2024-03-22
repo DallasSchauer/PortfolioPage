@@ -1,7 +1,6 @@
-import './style.css'
 import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js'
+import {OrbitControls} from 'OrbitControls';
+import {GLTFLoader} from 'GLTFLoader'
 
 const scene = new THREE.Scene();
 
@@ -24,7 +23,7 @@ loadingManager.onLoad = function() {
 
 const loader = new GLTFLoader(loadingManager);
 loader.load(
-  '/models/computer/scene.gltf',
+  './models/computer/scene.gltf',
   function (gltf) {
     scene.add(gltf.scene);
   },
@@ -38,7 +37,7 @@ loader.load(
 );
 
 loader.load(
-  '/models/mountain/scene.gltf',
+  './models/mountain/scene.gltf',
   function (gltf) {
     scene.add(gltf.scene);
 
@@ -106,7 +105,7 @@ pfp.position.x = -17;
 pfp.position.y = 28;
 pfp.position.z = 768;
 
-const kbTexture = new THREE.TextureLoader().load('images/keyboard.PNG');
+const kbTexture = new THREE.TextureLoader().load('images/keyboard.png');
 
 const kb = new THREE.Mesh(
   new THREE.BoxGeometry(10, 3, 0.1),
