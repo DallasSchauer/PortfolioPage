@@ -103,7 +103,7 @@ scene.add(pfp);
 
 pfp.position.x = -17;
 pfp.position.y = 28;
-pfp.position.z = 748;
+pfp.position.z = 708;
 
 const kbTexture = new THREE.TextureLoader().load('images/keyboard.png');
 
@@ -116,7 +116,7 @@ scene.add(kb);
 
 kb.position.x = -15;
 kb.position.y = 28;
-kb.position.z = 1446;
+kb.position.z = 1406;
 
 const ghTexture = new THREE.TextureLoader().load('images/github.PNG');
 
@@ -129,7 +129,7 @@ scene.add(gh);
 
 gh.position.x = -12;
 gh.position.y = 28;
-gh.position.z = 2140;
+gh.position.z = 2100;
 
 function makeIntroVisible() {
   const instruction = document.getElementById("instructions");
@@ -209,7 +209,6 @@ function animate() {
   controls.update();
 
   pfp.rotation.x += 0.0075;
-  // pfp.rotation.y += 0.0075;
 
   kb.rotation.z += 0.005;
 
