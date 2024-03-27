@@ -116,7 +116,7 @@ scene.add(kb);
 
 kb.position.x = -15;
 kb.position.y = 28;
-kb.position.z = 1456;
+kb.position.z = 1436;
 
 const ghTexture = new THREE.TextureLoader().load('images/github.PNG');
 
@@ -129,7 +129,7 @@ scene.add(gh);
 
 gh.position.x = -12;
 gh.position.y = 28;
-gh.position.z = 2140;
+gh.position.z = 2100;
 
 function makeIntroVisible() {
   const instruction = document.getElementById("instructions");
